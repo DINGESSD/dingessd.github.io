@@ -49,23 +49,23 @@
                 <thead>
                     <tr>
                         <th colspan="2"></th>
-                        <th>Name</th>
-                        <th>Mass (10<sup>24</sup>kg)</th>
-                        <th>Diameter (km)</th>
-                        <th>Density (kg/m<sup>3</sup>)</th>
-                        <th>Gravity (m/s<sup>2</sup>)</th>
-                        <th>Length of day (hours)</th>
-                        <th>Distance from Sun (10<sup>6</sup>km)</th>
-                        <th>Mean temperature (°C)</th>
-                        <th>Number of moons</th>
-                        <th>Notes</th>
-                        <th>Image</th>
+                        <th scope="colgroup">Name</th>
+                        <th scope="colgroup">Mass (10<sup>24</sup>kg)</th>
+                        <th scope="colgroup">Diameter (km)</th>
+                        <th scope="colgroup">Density (kg/m<sup>3</sup>)</th>
+                        <th scope="colgroup">Gravity (m/s<sup>2</sup>)</th>
+                        <th scope="colgroup">Length of day (hours)</th>
+                        <th scope="colgroup">Distance from Sun (10<sup>6</sup>km)</th>
+                        <th scope="colgroup">Mean temperature (°C)</th>
+                        <th scope="colgroup">Number of moons</th>
+                        <th scope="colgroup">Notes</th>
+                        <th scope="colgroup">Image</th>
                     </tr>
                 </thead>
                 <!-- The fourth child of the table element should be the table body element, which will contain the code and content to display rows of data. -->
                 <tbody>
                     <tr>
-                        <td colspan="2" rowspan="4">Terrestrial Planets</td>
+                        <td colspan="2" rowspan="4" scope="rowgroup">Terrestrial Planets</td>
                         <td>Mercury</td>
                         <td>0.330</td>
                         <td>4,879</td>
@@ -120,8 +120,8 @@
                     <!--End of Terrestrial Planets-->
                     <!--Start of Jovian Planets-->
                     <tr>
-                        <td rowspan="4">Jovian Planets</td>
-                        <td rowspan="2">Gas Planets</td>
+                        <td rowspan="4" scope="rowgroup">Jovian Planets</td>
+                        <td rowspan="2" scope="rowgroup">Gas Planets</td>
                         <td>Jupiter</td>
                         <td>1898</td>
                         <td>142,984</td>
@@ -148,7 +148,7 @@
                         <td><img src="/images/saturn.jpg" alt="Image of the Planet Saturn"></td>
                     </tr>
                     <tr>
-                        <td rowspan="2">Ice Giants</td>
+                        <td rowspan="2" scope="rowgroup">Ice Giants</td>
                         <td>Uranus</td>
                         <td>86.8</td>
                         <td>51,118</td>
@@ -177,7 +177,7 @@
                     <!--End of Jovian Planets-->
                     <!--Start of Dwarf Planets-->
                     <tr>
-                        <td colspan="2">Dwarf Planets</td>
+                        <td colspan="2" scope="row">Dwarf Planets</td>
                         <td>Pluto</td>
                         <td>0.0146</td>
                         <td>2,370</td>

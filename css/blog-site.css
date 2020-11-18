@@ -1,0 +1,254 @@
+        /*
+
+            - padding (shorthand and/or specific properties like padding-bottom, etc.)
+
+            - margin, (shorthand and/or specific properties like margin-top, etc.)
+
+            - letter-spacing, word-spacing, line-height
+
+            - width, max-width, min-width
+            - height, max-height, min-height
+
+        Typography 
+
+            - font-family, font-size, font-style, font-weight
+
+            - text-decoration, text-align
+
+            - color
+
+            - text-shadow, text-transform
+
+        Box, Layout and Border 
+
+            - border (shorthand and/or specific properties like border-top, border-bottom-radius, border-width, etc.)
+
+            - box-shadow
+
+            - display, float, align-items, align-content
+
+            - grid-template-columns, grid-column-gap
+
+            - transform
+
+        Other
+
+            - :nth()-child (to target specific child elements)
+
+            - :focus, :hover, :active (to target link states)
+
+            - @font-face or @import (to import typefaces)
+
+        */
+
+
+/* ------ START WRITING YOUR CODE BELOW ------ */
+
+/* ----------- GENERAL SETUP ----------- */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 1rem;
+}
+
+body {
+    margin: 1.5rem auto;
+    width:90%;
+    min-width:56.25rem;
+}
+
+/* ----------- POSITIONING AND GRID LAYOUT ----------- */
+
+header h1 {
+    text-align: center;
+}
+
+.main-section {
+    display: grid;
+    justify-content: flex-start;
+    grid-template-columns: 5fr 1fr;
+    grid-gap: 1rem;
+    padding-top: 2rem;
+}
+
+article {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.subsection {
+    display: flex;
+    background-color: #D6D6D6;
+}
+
+aside {
+    grid-column: 2;
+    grid-row: 1;
+    border-left: 0.0625rem solid black;
+    padding-left: 1.5rem;
+}
+
+aside p {
+    border-bottom: 0.0625rem solid black;
+    padding-bottom: 1.25rem;
+    line-height: 1.15rem;
+}
+
+.main-section, footer {
+    margin: 0rem 3rem 0rem 3rem;
+}
+
+footer {
+    padding-top: 4rem;
+}
+
+.copyright {
+    float: left;
+    display:inline-block;
+}
+
+.contributions {
+    float: right;
+    display:inline-block;
+}
+
+
+/* ----------- TYPOGRAPHY ----------- */
+
+/* ----------- Imported Typfaces ----------- */
+
+@font-face {
+    font-family: Montserrat;
+    src: url(/fonts/montserrat-regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Latoregular;
+    src: url(/fonts/Lato-regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: AmericanCaptain;
+    src: url(/fonts/AmericanCaptain-MdEY.otf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* ----------- Typographic Styling and other General Stuff ----------- */
+
+h1, h2, h3 {
+    font-family: Montserrat, Arial, sans-serif;
+}
+
+h1 {
+    transform: rotate(5deg);
+    font-size: 2rem;
+    font-family: Montserrat, Arial, sans-serif;
+    font-weight: bolder;
+    padding: 2rem 0rem 2rem 0rem;
+}
+
+h2 {
+    
+}
+
+h3 {
+    
+}
+
+p {
+    font-family: Latoregular, Georgia, serif;
+    font-size: 0.85rem;
+}
+
+time {
+    font-family: Latoregular, Georgia, serif;
+    font-style: italic;
+    font-size: 0.75rem; 
+}
+
+.highlight {
+    background-image:  linear-gradient(to bottom right, lightblue, darkblue);
+    display: inline-block;
+    padding: 0.75rem 2rem;
+    color: antiquewhite;
+    border-radius: 0.5rem 0rem 0.5rem 0rem;
+    letter-spacing: 0.25rem;
+    box-shadow: 0.25rem 0.25rem 0.125rem #313C40;
+    text-transform: uppercase;
+    font-family: Montserrat, Arial, sans-serif;
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+.ellipsis {
+    font-size: 0.25rem;
+    display: block;
+}
+
+.button {
+    background-color: #4D768A;
+    display: inline-block;
+    padding: 0.75rem 2rem;
+    color: antiquewhite;
+    border-radius: 0.5rem;
+    letter-spacing: 0.25rem;
+    box-shadow: 0.25rem 0.25rem 0.125rem #313C40;
+    text-transform: uppercase;
+    font-family: Montserrat, Arial, sans-serif;
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+/* ----------- FIGURES AND IMAGES ----------- */
+
+figure {
+
+}
+
+img {
+    width: 100%;
+}
+
+.section-images {
+    width: 25%;
+    margin: 0.5rem;
+    padding: 0rem;
+}
+
+.article-image {
+    float: left;
+    width: 25%;
+    padding: 0rem;
+}
+
+/* ----------- NAV MENU ----------- */
+
+nav {
+    border-top: 0.0625rem solid black;
+    border-bottom: 0.0625rem solid black;
+}
+
+nav a {
+    display: inline-block;
+    /*border: 1px solid black; --link boxes for formatting nav bar*/
+    padding: 1rem 2rem;
+    margin: 0.25rem 0.25rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: Montserrat, Arial, sans-serif;
+    font-weight: bolder;
+}
+
+.blog {
+    transform: rotate(-5deg);
+    text-decoration: line-through;
+}
+

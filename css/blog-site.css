@@ -247,6 +247,17 @@ nav a {
     font-weight: bolder;
 }
 
+nav a:hover {
+    color: orangered;
+    transform: rotate(-5deg);
+    text-decoration: line-through;
+}
+
+nav a:active {
+    color: #70468C;
+    text-decoration: underline;
+}
+
 .blog {
     transform: rotate(-5deg);
     text-decoration: line-through;

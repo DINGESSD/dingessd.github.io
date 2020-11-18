@@ -210,11 +210,12 @@ time {
 /* ----------- FIGURES AND IMAGES ----------- */
 
 figure {
-
+    
 }
 
 img {
     width: 100%;
+    border: 0.09375rem solid black;
 }
 
 .section-images {
